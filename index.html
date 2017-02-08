@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Person&#39;s profile</title>
+        <meta charset="utf-8">
+        <!-- Sets width of the page, sets initial zoom level -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Custom -->
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            // Smooth scroll animation
+            $(document).ready(function() {
+                $(".navbar a").on('click', function(e) {
+                    e.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <p class="navbar-brand" href="#">Name</p>
+                </div>
+                <div id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#aboutMe">about me</a></li>
+                        <li><a href="#workExperience">work experience</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="aboutMe" class="block-1">
+            <div class="container text-center">
+            	<img src="joseph-profile.jpg" class="img-circle">
+                <h3>about me</h3>
+                <p>Headline from LinkedIn</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <div id="workExperience" class="block-2">
+            <div class="container">
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+            </div>
+        </div>
+
+        <div id="contact" class="block-3">
+            <div class="container">
+                <h3 class="text-center">contact</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <div class="text-center">
+                            <p><span class="glyphicon glyphicon-envelope"></span>something@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <div class="text-center">
+                            <p><span class="glyphicon fa fa-linkedin"></span>something@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
