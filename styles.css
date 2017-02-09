@@ -1,0 +1,46 @@
+.block-0, .block-1, .block-3 {
+   background: #F5F5F5; 
+   color: #2D2D30;
+}
+
+.block-2 {
+   background: #2D2D30;
+   color: #F5F5F5;
+}
+
+.container {
+    padding: 80px 120px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.glyphicon {
+    padding: 5px;
+}
+
+.navbar {
+    background-color: #2D2D30;
+    border: 0;
+    letter-spacing: 3px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.navbar-nav li.active {
+    text-decoration: none;
+}
+
+.navbar-nav li:hover {
+    background: #F5F5F5;
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+}

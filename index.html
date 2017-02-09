@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Person&#39;s profile</title>
+        <meta charset="utf-8">
+        <!-- Sets width of the page, sets initial zoom level -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Custom -->
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            // Smooth scroll animation
+            $(document).ready(function() {
+                $(".navbar a").on('click', function(e) {
+                    e.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+    	<div class="modal-content">
+      		<div class="modal-header login_modal_header">
+        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        		<h2 class="modal-title" id="myModalLabel">Login to Your Account</h2>
+      		</div>
+      		<div class="modal-body login-modal">
+      			<p>Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required</p>
+      			<br/>
+      			<div class="clearfix"></div>
+      			<div id='social-icons-conatainer'>
+	        		<div class='modal-body-left'>
+	        			<div class="form-group">
+		              		<input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+		              		<i class="fa fa-user login-field-icon"></i>
+		            	</div>
+
+		            	<div class="form-group">
+		            	  	<input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+		              		<i class="fa fa-lock login-field-icon"></i>
+		            	</div>
+
+		            	<a href="#" class="btn btn-success modal-login-btn">Login</a>
+		            	<a href="#" class="login-link text-center">Lost your password?</a>
+	        		</div>
+
+	        		<div class='modal-body-right'>
+	        			<div class="modal-social-icons">
+	        				<a href='#' class="btn btn-default facebook"> <i class="fa fa-facebook modal-icons"></i> Sign In with Facebook </a>
+	        				<a href='#' class="btn btn-default twitter"> <i class="fa fa-twitter modal-icons"></i> Sign In with Twitter </a>
+	        				<a href='#' class="btn btn-default google"> <i class="fa fa-google-plus modal-icons"></i> Sign In with Google </a>
+	        				<a href='#' class="btn btn-default linkedin"> <i class="fa fa-linkedin modal-icons"></i> Sign In with Linkedin </a>
+	        			</div> 
+	        		</div>	
+	        		<div id='center-line'> OR </div>
+	        	</div>																												
+        		<div class="clearfix"></div>
+
+        		<div class="form-group modal-register-btn">
+        			<button class="btn btn-default"> New User Please Register</button>
+        		</div>
+      		</div>
+      		<div class="clearfix"></div>
+      		<div class="modal-footer login_modal_footer">
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <p class="navbar-brand" href="#">Name</p>
+                </div>
+                <div id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#aboutMe">about me</a></li>
+                        <li><a href="#workExperience">work experience</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="aboutMe" class="block-1">
+            <div class="container text-center">
+            	<img src="joseph-profile.jpg" class="img-circle">
+                <h3>about me</h3>
+                <p>Headline from LinkedIn</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <div id="workExperience" class="block-2">
+            <div class="container">
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+                <h3 class="text-center">work experience</h3>
+            </div>
+        </div>
+
+        <div id="contact" class="block-3">
+            <div class="container">
+                <h3 class="text-center">contact</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <div class="text-center">
+                            <p><span class="glyphicon glyphicon-envelope"></span>something@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <div class="text-center">
+                            <p><span class="glyphicon fa fa-linkedin"></span>something@domain.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
