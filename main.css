@@ -1,0 +1,240 @@
+/*******************************RESET******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********************************END RESET*************************************/
+
+/***************Login******************/
+#summary {
+   white-space: pre-wrap;
+}
+
+#login {
+   width: 500px;
+   background-color: white;
+   margin: 20% auto;
+   padding: 30px;
+   border-radius: 4px;
+   text-align: center;
+   font-family: sans-serif;
+   color: #424242;
+}
+
+#login h1 {
+	margin: 20px auto;
+	font-size: 2em;
+}
+
+#login p {
+	margin: 20px auto;
+}
+
+table {
+ 	margin: 0 auto;
+}
+
+/****************************************/
+html {
+    height: 100%
+}
+
+body{
+    background-image:url('background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2 {
+	font-size: 4em;
+	margin: 5px auto;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+ol {
+	text-align: center;
+	font-size: 2em;
+	color: white;
+	width: 300px;
+	margin: 20px auto;
+}
+
+ol li {
+	margin-bottom: 20px;
+}
+
+ol a {
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	border: 1px solid white;
+	display: inline-block;
+	padding: 5px;
+	font-family: 'Roboto Slab', serif;
+}
+
+ol a:hover {
+	background-color: white;
+	color:black;
+}
+
+/*****************************Title Screen*************************************/
+#summary {
+	height: 100%;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#title-block {
+    display: block;
+    text-align: center;
+}
+
+@keyframes titleAnimate {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+#title {
+    font-size: 8em;
+    font-family: 'Abel', sans-serif;
+    margin: auto;
+    color: white; /*#247BA0;*/
+    text-transform: uppercase;
+	animation-name: titleAnimate;
+	animation-duration: 5s;
+}
+
+#sub-title {
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: auto;
+    color: white;
+	opacity: 0;
+	animation-name: titleAnimate;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+	/*height: 100%;*/
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+	background-color: white;
+	background: rgba(255,255,255,0.6);
+}
+
+.content p {
+    color: black;
+    font-size: 1.1em;
+	margin: 10px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.important {
+	font-weight: bold;
+}
+
+.anchor {
+	position: relative;
+	top: 0;
+}
+
+#about-me {
+	color: white;
+	font-size: 2em;
+}
+#profile {
+	height: 280px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+#contact {
+	height: 280px;
+	width: 60%;
+	float: left;
+}
+
+#contact ul {
+	margin: 50px auto;
+	text-align: center;
+}
+
+#contact li {
+    display: inline;
+}
+
+#contact li img {
+	width: 150px;
+}
+
+.toTop {
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	height: 40px;
+}
+
+.toTopWrapper {
+	display: none;
+}
